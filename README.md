@@ -151,4 +151,4 @@ This project is licensed under the MIT License - see the [LICENSE](src/LICENSE) 
 
 ## Acknowledgments
 
-This work builds upon the LMMS-Eval framework for evaluating large multi-modality language models. We thank the community for their contributions to advancing VLM evaluation methodologies.
+This work builds upon the [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) framework for multimodal model evaluation. We thank the original authors for their contributions to the community.methodologies.
