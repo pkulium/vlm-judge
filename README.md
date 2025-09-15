@@ -81,7 +81,7 @@ vlm_judge/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/vlm_judge.git
+git clone https://github.com/pkulium/vlm_judge.git
 cd vlm_judge
 ```
 
