@@ -1,0 +1,13 @@
+group: judge_cvrr
+task:
+- judge_cvrr_continuity_and_object_instance_count
+- judge_cvrr_fine_grained_action_understanding
+- judge_cvrr_interpretation_of_social_context
+- judge_cvrr_interpretation_of_visual_context
+- judge_cvrr_multiple_actions_in_a_single_video
+- judge_cvrr_non_existent_actions_with_existent_scene_depictions
+- judge_cvrr_non_existent_actions_with_non_existent_scene_depictions
+- judge_cvrr_partial_actions
+- judge_cvrr_time_order_understanding
+- judge_cvrr_understanding_emotional_context
+- judge_cvrr_unusual_and_physically_anomalous_activities

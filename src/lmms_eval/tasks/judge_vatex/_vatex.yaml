@@ -1,0 +1,4 @@
+group : judge_vatex
+task:
+- judge_vatex_val_zh
+- judge_vatex_test
