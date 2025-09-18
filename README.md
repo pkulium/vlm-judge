@@ -1,4 +1,4 @@
-# Is Your Video Language Model a Reliable Judge?
+# [ICLR 2025] Is Your Video Language Model a Reliable Judge?
 
 This repository contains the code for our paper ["Is Your Video Language Model a Reliable Judge?"](https://openreview.net/forum?id=m8yby1JfbU).
 
