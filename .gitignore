@@ -38,7 +38,7 @@ lmms_eval/tasks/vatex/__pycache__/utils.cpython-310.pyc
 model_zoo/
 *.log
 *.tmp
-logs_*/
+# logs_*/
 .DS_Store
 lmms_eval/models/LLaMA-VID/
 rebuttal*/
