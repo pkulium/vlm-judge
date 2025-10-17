@@ -109,17 +109,39 @@ lmms-eval --model <model_name> --tasks <task_name> --output_path <output_dir>
 
 ### Experiment Phases
 
-Our experiments are organized in multiple phases:
+Our experiments are organized in multiple phases, each starting with script execution followed by extended analysis:
 
-1. **Phase 1**: Initial reliability assessment of VLM judges
-   - Run correction experiments: `python src/logs_phase1/correct/correct.py`
-   - Run debate experiments: `python src/logs_phase1/correct/correct_debate.py`
+1. **Phase 1**: Individual VLM Judge Reliability Assessment
+   - Run initial experiments: `bash scripts/run_video_phase1.sh`
+   - Extended analysis: 
+     - `python src/logs_phase1/correct/correct.py`
+     - `python src/logs_phase1/correct/correct_debate.py`
+   - Evaluate individual VLM judges against candidate responses
+   - Compare VLM judge ratings with Agent-Debate reference using Weighted Cohen's Kappa
 
-2. **Phase 2**: Fine-tuning experiments with Video-LLaVA
-   - Process fine-tuning data: `python src/logs_phase2_processed_finetune/create_data.py`
+2. **Phase 2**: Standard Model Evaluation 
+   - Run initial experiments: `bash scripts/run_video_phase2.sh`
+   - Extended analysis: `python src/logs_phase3/create_data.py`
+   - Assess baseline performance of VLM judges across visual dimensions
+   - Analyze rating distributions and agreement patterns
 
-3. **Phase 3 & 3.1**: Extended reliability analysis with collective judgments
-   - Process evaluation data: `python src/logs_phase3/create_data.py`
+3. **Phase 2 (Fine-tuned)**: Fine-tuning Investigation
+   - Run fine-tuned model experiments: `bash scripts/run_video_phase2_finetuned.sh` 
+   - Extended analysis: `python src/logs_phase2_processed_finetune/create_data.py`
+   - Investigate whether improved understanding enhances judging reliability
+   - Compare pre- and post-fine-tuning evaluation performance
+
+4. **Phase 3**: Collective Thought Evaluation
+   - Run collective evaluation experiments: `bash scripts/run_video_phase3.sh`
+   - Extended analysis: `python src/logs_phase3/create_data.py`
+   - Test collective thought approaches with multiple VLM judges
+   - Analyze whether aggregating judgments improves reliability
+
+5. **Phase 3.1**: Mixture of Judges with Reliability Selection
+   - Run mixture experiments: `bash scripts/run_video_phase3.1.sh`
+   - Extended analysis: `python src/logs_phase3/create_data.py`
+   - Implement reliability-based judge selection gates
+   - Evaluate dynamic judge selection based on per-dimension reliability scores
 
 ### Data Preparation
 
