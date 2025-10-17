@@ -1,4 +1,4 @@
-# Is Your Video Language Model a Reliable Judge?
+# [ICLR 2025] Is Your Video Language Model a Reliable Judge?
 
 This repository contains the code for our paper ["Is Your Video Language Model a Reliable Judge?"](https://openreview.net/forum?id=m8yby1JfbU).
 
@@ -81,7 +81,7 @@ vlm_judge/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/vlm_judge.git
+git clone https://github.com/pkulium/vlm_judge.git
 cd vlm_judge
 ```
 
@@ -151,4 +151,4 @@ This project is licensed under the MIT License - see the [LICENSE](src/LICENSE) 
 
 ## Acknowledgments
 
-This work builds upon the LMMS-Eval framework for evaluating large multi-modality language models. We thank the community for their contributions to advancing VLM evaluation methodologies.
+This work builds upon the [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) framework for multimodal model evaluation. We thank the original authors for their contributions to the community.methodologies.
