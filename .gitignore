@@ -29,7 +29,7 @@ pretrained/
 LLaVA/
 temp/
 InternVL/
-logs/
+# logs/
 data/
 llava-video/
 Video-MME/
